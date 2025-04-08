@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Home</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="../Assets/style/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../Assets/style/style.css">
+		<script src="../assets/script/bootstrap.bundle.min.js"></script>
+		<script src="../assets/script/jquery-3.6.3.min.js"></script>
+    </head>
+    <body>
+		<header class="navbar navbar-expand-lg navbar-dark bg-dark px-3 mb-4">
+			<a class="navbar-brand" href="../products/home.html">The Chosen Shop</a>
+			<a href="../products/home.html" class="link-light mx-3 text-decoration-none">Home</a>
+			<a href="../products/catalog.html" class="link-light mx-3 text-decoration-none">Catalog</a>
+			<div class="text-center me-3 right">
+				<a href="../products/cart.html" class="text-light text-decoration-none">Cart (5)</a>
+			</div>
+		</header>
+		<div class="container-lg px-1">
+            <div class="row">
+                <div class="col">
+                    <h1 class="mb-4 display-4 fw-bold left">All Products</h1>
+                </div>
+                <div class="col-3 pt-4">
+                    <form action ="" method="post" class="row align-content-end">
+                        <input type="hidden" name="<?=$this->security->get_csrf_token_name();?>" value="<?=$this->security->get_csrf_hash();?>"/>
+                        <div class="col-3 m-0 pt-2">
+                            <label class="form-check-label" for="sort">Sort By:</label>
+                        </div>
+                        <div class="col-9 m-0 p-0">
+                            <select class="form-select d-inline-block" name="sort">
+                                <option selected>Most Popular</option>
+                                <option>Name: A-Z</option>
+                                <option>Name: Z-A</option>
+                                <option>Price: Low to High</option>
+                                <option>Price: High to Low</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-2 pt-4">
+                    <div class="mb-4 text-center">
+                        <a href="#">First</a>
+                        <p class="mb-0 d-inline-block">|</p>
+                        <a href="#">Prev</a>
+                        <p class="mb-0 d-inline-block">|</p>
+                        <p class="mb-0 d-inline-block">1</p>
+                        <p class="mb-0 d-inline-block">|</p>
+                        <a href="#">Next</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <form action="" method="post" class="row gy-1">
+                        <input type="hidden" class="form-label" name="<?=$this->security->get_csrf_token_name();?>" value="<?=$this->security->get_csrf_hash();?>"/>
+                        <input class="col-12 mt-3 form-control" type="text" placeholder="Search" name="search">
+                        <p class="text-dark fs-5 fw-bold m-0 mb-2 mt-3">Categories</p>
+                        <a href="#" class="text-dark text-decoration-none">Category 1</a>
+                        <a href="#" class="text-dark text-decoration-none">Category 2</a>
+                        <a href="#" class="text-dark text-decoration-none">Category 3</a>
+                        <a href="#" class="text-dark text-decoration-none">Category 4</a>
+                        <a href="#" class="text-decoration-none">Show more</a>
+                    </form>
+                </div>
+                <div class="col-10">
+                    <div class="row mb-3 justify-content-center">
+                        <div class="col col-2_4">
+                            <a class="text-dark text-decoration-none" href="../products/show_products.html">
+                                <div class="p-3 mx-1 mb-4 border bg-light">
+                                    <img src="../assets/img/image.png" class="img-thumbnail center" alt="image">
+                                    <p class="fs-5 fw-bold mb-0">The Product</p>
+                                    <p class="fs-6 mb-0">$1.00</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col col-2_4">
+                            <a class="text-dark text-decoration-none" href="../products/show_products.html">
+                                <div class="p-3 mx-1 mb-4 border bg-light">
+                                    <img src="../assets/img/image.png" class="img-thumbnail center" alt="image">
+                                    <p class="fs-5 fw-bold mb-0">The Product</p>
+                                    <p class="fs-6 mb-0">$1.00</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col col-2_4">
+                            <a class="text-dark text-decoration-none" href="../products/show_products.html">
+                                <div class="p-3 mx-1 mb-4 border bg-light">
+                                    <img src="../assets/img/image.png" class="img-thumbnail center" alt="image">
+                                    <p class="fs-5 fw-bold mb-0">The Product</p>
+                                    <p class="fs-6 mb-0">$1.00</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col col-2_4">
+                            <a class="text-dark text-decoration-none" href="../products/show_products.html">
+                                <div class="p-3 mx-1 mb-4 border bg-light">
+                                    <img src="../assets/img/image.png" class="img-thumbnail center" alt="image">
+                                    <p class="fs-5 fw-bold mb-0">The Product</p>
+                                    <p class="fs-6 mb-0">$1.00</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col col-2_4">
+                            <a class="text-dark text-decoration-none" href="../products/show_products.html">
+                                <div class="p-3 mx-1 mb-4 border bg-light">
+                                    <img src="../assets/img/image.png" class="img-thumbnail center" alt="image">
+                                    <p class="fs-5 fw-bold mb-0">The Product</p>
+                                    <p class="fs-6 mb-0">$1.00</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col col-2_4">
+                            <a class="text-dark text-decoration-none" href="../products/show_products.html">
+                                <div class="p-3 mx-1 mb-4 border bg-light">
+                                    <img src="../assets/img/image.png" class="img-thumbnail center" alt="image">
+                                    <p class="fs-5 fw-bold mb-0">The Product</p>
+                                    <p class="fs-6 mb-0">$1.00</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col col-2_4">
+                            <a class="text-dark text-decoration-none" href="../products/show_products.html">
+                                <div class="p-3 mx-1 mb-4 border bg-light">
+                                    <img src="../assets/img/image.png" class="img-thumbnail center" alt="image">
+                                    <p class="fs-5 fw-bold mb-0">The Product</p>
+                                    <p class="fs-6 mb-0">$1.00</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col col-2_4">
+                            <a class="text-dark text-decoration-none" href="../products/show_products.html">
+                                <div class="p-3 mx-1 mb-4 border bg-light">
+                                    <img src="../assets/img/image.png" class="img-thumbnail center" alt="image">
+                                    <p class="fs-5 fw-bold mb-0">The Product</p>
+                                    <p class="fs-6 mb-0">$1.00</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col col-2_4">
+                            <a class="text-dark text-decoration-none" href="../products/show_products.html">
+                                <div class="p-3 mx-1 mb-4 border bg-light">
+                                    <img src="../assets/img/image.png" class="img-thumbnail center" alt="image">
+                                    <p class="fs-5 fw-bold mb-0">The Product</p>
+                                    <p class="fs-6 mb-0">$1.00</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col col-2_4">
+                            <a class="text-dark text-decoration-none" href="../products/show_products.html">
+                                <div class="p-3 mx-1 mb-4 border bg-light">
+                                    <img src="../assets/img/image.png" class="img-thumbnail center" alt="image">
+                                    <p class="fs-5 fw-bold mb-0">The Product</p>
+                                    <p class="fs-6 mb-0">$1.00</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col col-2_4">
+                            <a class="text-dark text-decoration-none" href="../products/show_products.html">
+                                <div class="p-3 mx-1 mb-4 border bg-light">
+                                    <img src="../assets/img/image.png" class="img-thumbnail center" alt="image">
+                                    <p class="fs-5 fw-bold mb-0">The Product</p>
+                                    <p class="fs-6 mb-0">$1.00</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col col-2_4">
+                            <a class="text-dark text-decoration-none" href="../products/show_products.html">
+                                <div class="p-3 mx-1 mb-4 border bg-light">
+                                    <img src="../assets/img/image.png" class="img-thumbnail center" alt="image">
+                                    <p class="fs-5 fw-bold mb-0">The Product</p>
+                                    <p class="fs-6 mb-0">$1.00</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col col-2_4">
+                            <a class="text-dark text-decoration-none" href="../products/show_products.html">
+                                <div class="p-3 mx-1 mb-4 border bg-light">
+                                    <img src="../assets/img/image.png" class="img-thumbnail center" alt="image">
+                                    <p class="fs-5 fw-bold mb-0">The Product</p>
+                                    <p class="fs-6 mb-0">$1.00</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col col-2_4">
+                            <a class="text-dark text-decoration-none" href="../products/show_products.html">
+                                <div class="p-3 mx-1 mb-4 border bg-light">
+                                    <img src="../assets/img/image.png" class="img-thumbnail center" alt="image">
+                                    <p class="fs-5 fw-bold mb-0">The Product</p>
+                                    <p class="fs-6 mb-0">$1.00</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col col-2_4">
+                            <a class="text-dark text-decoration-none" href="../products/show_products.html">
+                                <div class="p-3 mx-1 mb-4 border bg-light">
+                                    <img src="../assets/img/image.png" class="img-thumbnail center" alt="image">
+                                    <p class="fs-5 fw-bold mb-0">The Product</p>
+                                    <p class="fs-6 mb-0">$1.00</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mb-4 text-center">
+                        <a href="#">&larr;</a>
+                        <a href="#">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                        <a href="#">6</a>
+                        <a href="#">7</a>
+                        <a href="#">8</a>
+                        <a href="#">9</a>
+                        <a href="#">10</a>
+                        <a href="#">&rarr;</a>
+                    </div>
+                </div>
+            </div>
+		</div>
+	</body>
+</html>

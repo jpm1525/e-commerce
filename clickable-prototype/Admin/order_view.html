@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Orders</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="../Assets/style/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../Assets/style/style.css">
+		<script src="../assets/script/bootstrap.bundle.min.js"></script>
+		<script src="../assets/script/jquery-3.6.3.min.js"></script>
+    </head>
+    <body>
+		<header class="navbar navbar-expand-lg navbar-dark bg-dark px-3 mb-4">
+			<a class="navbar-brand" href="../Admin/orders">The Chosen Dashboard</a>
+			<a href="../Admin/orders" class="link-light mx-3 text-decoration-none">Orders</a>
+			<a href="../Admin/admin_products" class="link-light mx-3 text-decoration-none">Product</a>
+			<div class="text-center me-3 right">
+				<a href="../Users/login.html" class="text-light text-decoration-none">Logout</a>
+			</div>
+		</header>
+		<!-------------Order Info---------------->
+		<div class="container-lg px-1">
+			<div class="row gx-4">
+				<div class="col-9 col-md-3 m-auto mb-3 p-3 top jumbotron center border bg-light">
+					<p class="fs-5">Order ID: 1</p>
+					<!-------------Shipping Info---------------->
+					<p class="fw-bold mb-1">Customer shipping info:</p>
+					<p class="mb-0">Name: bob</p>
+					<p class="mb-0">Address: 123 dojo way</p>
+					<p class="mb-0">City: seatle</p>
+					<p class="mb-0">State: wa</p>
+					<p>Zip: 98133</p>
+					<!-------------Billing Info---------------->
+					<p class="fw-bold mb-1">Customer Billing info:</p>
+					<p class="mb-0">Name: bob</p>
+					<p class="mb-0">Address: 123 dojo way</p>
+					<p class="mb-0">City: seatle</p>
+					<p class="mb-0">State: wa</p>
+					<p>Zip: 98133</p>
+				</div>
+				<div class="col gy-0">
+					<div class="row h-75">
+						<!-------------Ordered Items---------------->
+						<div class="table-container col-12 mb-0 h-100 overflow-auto">
+							<table class="table table-light table-striped">
+								<thead>
+									<tr>
+										<th scope="col-1">ID</th>
+										<th scope="col-1">Item</th>
+										<th scope="col-1">price</th>
+										<th scope="col-1">Quantity</th>
+										<th scope="col-1">Total</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>100</td>
+										<td>Cup</td>
+										<td>$1000</td>
+										<td>5</td>
+										<td>$1000.10</td>
+									</tr>
+									<tr>
+										<td>100</td>
+										<td>Cup</td>
+										<td>$1000</td>
+										<td>5</td>
+										<td>$1000.10</td>
+									</tr>
+									<tr>
+										<td>100</td>
+										<td>Cup</td>
+										<td>$1000</td>
+										<td>5</td>
+										<td>$1000.10</td>
+									</tr>
+									<tr>
+										<td>100</td>
+										<td>Cup</td>
+										<td>$1000</td>
+										<td>5</td>
+										<td>$1000.10</td>
+									</tr>
+									<tr>
+										<td>100</td>
+										<td>Cup</td>
+										<td>$1000</td>
+										<td>5</td>
+										<td>$1000.10</td>
+									</tr>
+									<tr>
+										<td>100</td>
+										<td>Cup</td>
+										<td>$1000</td>
+										<td>5</td>
+										<td>$1000.10</td>
+									</tr>
+									<tr>
+										<td>100</td>
+										<td>Cup</td>
+										<td>$1000</td>
+										<td>5</td>
+										<td>$1000.10</td>
+									</tr>
+									<tr>
+										<td>100</td>
+										<td>Cup</td>
+										<td>$1000</td>
+										<td>5</td>
+										<td>$1000.10</td>
+									</tr>
+									<tr>
+										<td>100</td>
+										<td>Cup</td>
+										<td>$1000</td>
+										<td>5</td>
+										<td>$1000.10</td>
+									</tr>
+									<tr>
+										<td>100</td>
+										<td>Cup</td>
+										<td>$1000</td>
+										<td>5</td>
+										<td>$1000.10</td>
+									</tr>
+									<tr>
+										<td>100</td>
+										<td>Cup</td>
+										<td>$1000</td>
+										<td>5</td>
+										<td>$1000.10</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<!-------------Status---------------->
+					<div class="mt-5 row">
+						<div class="col-12 col-md-6">
+							<p class="bg-success text-light fs-3 text-center w-50 m-auto mb-3">Status: Shipped</p>
+						</div>
+						<!-------------Total---------------->
+						<div class="col-12 col-md-6">
+							<div class="w-50 m-auto fs-5 jumbotron center border bg-light p-3">
+								<p class="mb-0">Subtotal: $123.43</p>
+								<p class="mb-0">Shipping: $123.43</p>
+								<p class="mb-0">Total Price: $123.43</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,29 @@
+.center{
+    display: table !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+.left{
+    display: table !important;
+    margin-left: 0 !important;
+    margin-right: auto !important;
+}
+.right{
+    display: table !important;
+    margin-left: auto !important;      
+    margin-right: 0 !important;
+}
+.col-2_4{
+    flex:0 0 auto;
+    width:20%
+}
+.top{
+    display: table !important;
+    margin-bottom: auto !important;      
+    margin-top: 0 !important;
+}
+.bottom{
+    display: table !important;
+    margin-bottom: 0 !important;      
+    margin-top: auto !important;
+}
